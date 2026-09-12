@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>K-Wave</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🌸 K-WAVE 🌸</h1>
+        <p>Your world of K-Dramas & K-Pop</p>
+    </header>
+
+    <nav>
+    <a href="#home">Home</a>
+    <a href="#kdramas">K-Dramas</a>
+    <a href="#kpop">K-Pop</a>
+    <a href="#bts">BTS</a>
+    <button type="button" onclick="document.getElementById('fan-zone').scrollIntoView({behavior: 'smooth'});">
+    Fan Zone
+</button>
+    <button type="button" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'});">
+    Contact
+</button>
+    <button onclick="toggleDarkMode()" class="dark-btn">
+        Dark Mode
+    </button>
+</nav>
+
+    <main id="home">
+    <h2>Welcome to K-Wave 💜</h2>
+    <p>Explore your favorite Korean dramas, K-Pop artists and more!</p>
+
+    <button>Explore Now</button>
+
+    <div class="search-box">
+    <input type="text" id="searchInput" placeholder="Search K-Wave...">
+    <button onclick="searchContent()">🔎 Search</button>
+</div>
+<section class="featured">
+    <div class="featured-content">
+        <p>✨ FEATURED K-DRAMA</p>
+        <h2>Twinkling Watermelon</h2>
+        <p>
+            A heartwarming story about family, friendship, music and youth.
+        </p>
+
+        <button onclick="showDetails('Twinkling Watermelon')">
+            View Drama
+        </button>
+    </div>
+</section>
+
+    <section class="dramas" id="Kdramas">
+        <h2>🎬 Popular K-Dramas</h2>
+
+        <div class="drama-container">
+
+            <div class="drama-card">
+                <img src="image/goblin.jpg" alt="Goblin">
+                <h3>Goblin</h3>
+                <p>Fantasy • Romance • Drama</p>
+                <button onclick="showDetails('Goblin')">View Details</button>
+            </div>
+
+            <div class="drama-card">
+                <img src="image/cloy.jpg" alt="Crash Landing on You">
+                <h3>Crash Landing on You</h3>
+                <p>Romance • Comedy • Drama</p>
+                <button onclick="showDetails('Crash Landing on You')">View Details</button>
+            </div>
+
+            <div class="drama-card">
+                <img src="image/twinkling-watermelon.jpg" alt="Twinkling Watermelon">
+                <h3>Twinkling Watermelon</h3>
+                <p>Romance • Fantasy • Youth</p>
+                <button onclick="showDetails('Twinkling Watermelon')">View Details</button>
+            </div>
+
+        </div>
+    </section>
+    <section class="kpop" id="kpop">
+    <h2>🎵 Popular K-Pop</h2>
+
+    <div class="kpop-container">
+
+        <div class="kpop-card">
+            <h3>BTS 💜</h3>
+            <p>Boy Group • HYBE</p>
+            <button onclick="showArtist('BTS')">Explore</button>
+        </div>
+
+        <div class="kpop-card">
+            <h3>BLACKPINK 🖤💗</h3>
+            <p>Girl Group • YG Entertainment</p>
+            <button onclick="showArtist('BLACKPINK')">Explore</button>
+        </div>
+
+        <div class="kpop-card">
+            <h3>Stray Kids ⭐</h3>
+            <p>Boy Group • JYP Entertainment</p>
+            <button onclick="showArtist('Stray Kids')">Explore</button>
+        </div>
+
+    </div>
+</section>
+<section class="bts-section" id="bts">
+
+    <h2>💜 BTS</h2>
+
+    <p class="bts-intro">
+        Welcome to the BTS corner of K-Wave!
+    </p>
+    <div class="songs-section">
+
+    <h3>🎵 BTS Popular Songs</h3>
+
+    <div class="song-list">
+
+        <div class="song-card">
+            <h4>Butter 💜</h4>
+            <p>Released: 2021</p>
+            <button onclick="showSong('Butter')">Select Song</button>
+        </div>
+
+        <div class="song-card">
+            <h4>Dynamite ✨</h4>
+            <p>Released: 2020</p>
+            <button onclick="showSong('Dynamite')">Select Song</button>
+        </div>
+
+        <div class="song-card">
+            <h4>Spring Day 🌸</h4>
+            <p>Released: 2017</p>
+            <button onclick="showSong('Spring Day')">Select Song</button>
+        </div>
+
+    </div>
+
+</div>
+
+    <div class="members-container">
+
+        <div class="member-card">
+            <h3>RM</h3>
+            <p>Leader • Rapper</p>
+        </div>
+
+        <div class="member-card">
+            <h3>Jin</h3>
+            <p>Vocalist</p>
+        </div>
+
+        <div class="member-card">
+            <h3>SUGA</h3>
+            <p>Rapper • Producer</p>
+        </div>
+
+        <div class="member-card">
+            <h3>j-hope</h3>
+            <p>Rapper • Dancer</p>
+        </div>
+
+        <div class="member-card">
+            <h3>Jimin</h3>
+            <p>Vocalist • Dancer</p>
+        </div>
+
+        <div class="member-card">
+            <h3>V</h3>
+            <p>Vocalist</p>
+        </div>
+
+        <div class="member-card">
+            <h3>Jungkook</h3>
+            <p>Vocalist • Performer</p>
+        </div>
+
+    </div>
+
+</section>
+<section class="fan-zone" id="fan-zone">
+
+    <h2>💜 K-Wave Fan Zone</h2>
+
+    <p>Tell us your favorite K-Drama or K-Pop artist!</p>
+
+    <input type="text" id="fanName" placeholder="Your name">
+
+    <input type="text" id="favorite" placeholder="Your favorite">
+
+    <button onclick="joinFanZone()">Join Fan Zone</button>
+
+    <h3 id="fanMessage"></h3>
+
+</section>
+<section class="contact" id="contact">
+
+    <h2>📩 Contact K-Wave</h2>
+
+    <p>Have a suggestion for our website?</p>
+
+    <input type="text" id="contactName" placeholder="Your name">
+
+    <input type="email" id="contactEmail" placeholder="Your email">
+
+    <textarea id="contactMessage" placeholder="Your message"></textarea>
+
+    <br>
+
+    <button onclick="sendMessage()">Send Message</button>
+
+    <p id="contactResult"></p>
+
+</section>
+
+</main>
+<div id="details-popup" class="popup">
+    <div class="popup-content">
+        <span class="close-btn" onclick="closePopup()">&times;</span>
+
+        <h2 id="popup-title"></h2>
+        <p id="popup-info"></p>
+        <p id="popup-description"></p>
+    </div>
+</div>
+<div id="artist-popup" class="popup">
+    <div class="popup-content">
+        <span class="close-btn" onclick="closeArtistPopup()">&times;</span>
+
+        <h2 id="artist-title"></h2>
+        <p id="artist-info"></p>
+        <p id="artist-description"></p>
+    </div>
+</div>
+<div id="song-popup" class="popup">
+    <div class="popup-content">
+        <span class="close-btn" onclick="closeSongPopup()">&times;</span>
+
+        <h2 id="song-title"></h2>
+        <p id="song-info"></p>
+    </div>
+</div>
+
+
+
+
+    <footer>
+        <p>© 2026 K-Wave | Made with 💜</p>
+    </footer>
+    <button id="topBtn" onclick="goToTop()">Top</button>
+    
+<script src="script.js"></script>
+</body>
+</html>

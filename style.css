@@ -1,0 +1,473 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f0ff;
+    color: #333;
+    
+}
+
+header {
+    text-align: center;
+    padding: 30px;
+    background-color: #7b2cbf;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 40px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+nav {
+    background-color: #4a148c;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #ffd6ff;
+}
+
+main {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+main h2 {
+    font-size: 35px;
+    color: #7b2cbf;
+}
+
+main p {
+    font-size: 18px;
+}
+
+button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    background-color: #7b2cbf;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4a148c;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #4a148c;
+    color: white;
+}
+.dramas {
+    padding: 50px 20px;
+}
+
+.drama-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.drama-card {
+    background-color: white;
+    width: 250px;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+.drama-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.drama-card h3 {
+    color: #7b2cbf;
+    font-size: 22px;
+}
+
+.drama-card p {
+    color: #666;
+}
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: white;
+    width: 400px;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.popup-content h2 {
+    color: #7b2cbf;
+}
+
+.close-btn {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.kpop {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.kpop-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.kpop-card {
+    background-color: white;
+    width: 250px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.kpop-card h3 {
+    color: #7b2cbf;
+    font-size: 24px;
+}
+
+.kpop-card p {
+    color: #666;
+}
+.bts-section {
+    padding: 70px 20px;
+    text-align: center;
+    background-color: #f3e8ff;
+}
+
+.bts-section h2 {
+    font-size: 40px;
+    color: #7b2cbf;
+}
+
+.bts-intro {
+    font-size: 18px;
+    margin-bottom: 35px;
+    color: #7b2cbf;
+}
+
+.members-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.member-card {
+    background-color: white;
+    width: 180px;
+    padding: 25px 15px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s;
+}
+
+.member-card:hover {
+    transform: translateY(-8px);
+}
+
+.member-card h3 {
+    color: #7b2cbf;
+    font-size: 22px;
+}
+
+.member-card p {
+    color: #666;
+}
+.songs-section {
+    margin-top: 60px;
+}
+
+.songs-section h3 {
+    font-size: 30px;
+    color: #7b2cbf;
+}
+
+.song-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.song-card {
+    background-color: white;
+    width: 220px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.song-card h4 {
+    font-size: 20px;
+    color: #7b2cbf;
+}
+
+.song-card p {
+    color: #666;
+}
+.search-box {
+    text-align: center;
+    padding: 25px;
+    background-color: #f3e8ff;
+}
+
+.search-box input {
+    width: 300px;
+    padding: 12px;
+    border: 2px solid #7b2cbf;
+    border-radius: 25px;
+    font-size: 16px;
+    outline: none;
+}
+
+.search-box button {
+    margin-left: 10px;
+}
+.dark-btn {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: white;
+    color: #4a148c;
+    margin-left: 15px;
+}
+
+.dark-mode {
+    background-color: #1e1e1e;
+    color: white;
+}
+
+.dark-mode .drama-card,
+.dark-mode .kpop-card,
+.dark-mode .member-card,
+.dark-mode .song-card,
+.dark-mode .popup-content {
+    background-color: #2b2b2b;
+    color: white;
+}
+
+.dark-mode .search-box {
+    background-color: #302040;
+}
+
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode h4 {
+    color: #d8a7ff;
+}
+.featured {
+    margin: 30px 20px;
+    padding: 60px 30px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #7b2cbf, #c77dff);
+    color: white;
+    text-align: center;
+}
+
+.featured-content {
+    max-width: 600px;
+    margin: auto;
+}
+
+.featured-content p:first-child {
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.featured-content h2 {
+    font-size: 40px;
+    color: white;
+    margin: 15px 0;
+}
+
+.featured-content p {
+    font-size: 18px;
+}
+
+.featured-content button {
+    background-color: white;
+    color: #7b2cbf;
+    margin-top: 15px;
+}
+
+.featured-content button:hover {
+    background-color: #f3e8ff;
+}
+#topBtn {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 25px;
+    background-color: #7b2cbf;
+    color: white;
+    cursor: pointer;
+    display: none;
+    z-index: 1000;
+}
+
+#topBtn:hover {
+    background-color: #4a148c;
+}
+.fan-zone {
+    text-align: center;
+    padding: 70px 20px;
+    background-color: #f3e8ff;
+}
+
+.fan-zone h2 {
+    font-size: 35px;
+    color: #7b2cbf;
+}
+
+.fan-zone input {
+    padding: 12px;
+    margin: 8px;
+    width: 220px;
+    border: 2px solid #7b2cbf;
+    border-radius: 20px;
+    outline: none;
+}
+
+.fan-zone button {
+    margin: 10px;
+}
+
+#fanMessage {
+    color: #7b2cbf;
+    margin-top: 25px;
+}
+.contact {
+    text-align: center;
+    padding: 70px 20px;
+    background-color: #f8f0ff;
+}
+
+.contact h2 {
+    color: #7b2cbf;
+    font-size: 35px;
+}
+
+.contact input,
+.contact textarea {
+    display: block;
+    width: 300px;
+    max-width: 90%;
+    margin: 12px auto;
+    padding: 12px;
+    border: 2px solid #7b2cbf;
+    border-radius: 15px;
+    font-size: 16px;
+    outline: none;
+}
+
+.contact textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+#contactResult {
+    color: #7b2cbf;
+    font-weight: bold;
+}
+html,body {
+    min-height: 100%;
+    overflow-y: auto;
+   
+}
+html {
+    scroll-behavior: smooth;
+}
+/* Mobile Friendly */
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    header p {
+        font-size: 15px;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    nav button {
+        margin: 10px 0;
+    }
+
+    main {
+        padding: 50px 15px;
+    }
+
+    .search-box input {
+        width: 80%;
+    }
+
+    .featured {
+        margin: 20px 10px;
+        padding: 40px 15px;
+    }
+
+    .featured-content h2 {
+        font-size: 30px;
+    }
+
+    .drama-card,
+    .kpop-card,
+    .song-card {
+        width: 85%;
+    }
+
+    .member-card {
+        width: 80%;
+    }
+
+    .contact input,
+    .contact textarea {
+        width: 80%;
+    }
+}
