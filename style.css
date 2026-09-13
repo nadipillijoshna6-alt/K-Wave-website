@@ -262,38 +262,54 @@ footer {
 .search-box button {
     margin-left: 10px;
 }
-.dark-btn {
-    padding: 8px 15px;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    background-color: white;
-    color: #4a148c;
-    margin-left: 15px;
-}
+/* 🌙 Improved Dark Mode */
 
 .dark-mode {
-    background-color: #1e1e1e;
-    color: white;
+    background-color: #121212;
+    color: #f5f5f5;
+}
+
+.dark-mode .bts-section,
+.dark-mode .fan-zone,
+.dark-mode .about,
+.dark-mode .search-box {
+    background-color: #1b1422;
+}
+
+.dark-mode .contact {
+    background-color: #181818;
 }
 
 .dark-mode .drama-card,
 .dark-mode .kpop-card,
 .dark-mode .member-card,
 .dark-mode .song-card,
-.dark-mode .popup-content {
-    background-color: #2b2b2b;
+.dark-mode .bts-about {
+    background-color: #242424;
+    color: #f5f5f5;
+}
+
+.dark-mode .drama-card p,
+.dark-mode .kpop-card p,
+.dark-mode .member-card p,
+.dark-mode .song-card p,
+.dark-mode .bts-about p {
+    color: #d0d0d0;
+}
+
+.dark-mode .fan-zone input,
+.dark-mode .contact input,
+.dark-mode .contact textarea,
+.dark-mode .search-box input {
+    background-color: #242424;
     color: white;
 }
 
-.dark-mode .search-box {
-    background-color: #302040;
-}
-
-.dark-mode h2,
-.dark-mode h3,
-.dark-mode h4 {
-    color: #d8a7ff;
+.dark-mode .fan-zone input::placeholder,
+.dark-mode .contact input::placeholder,
+.dark-mode .contact textarea::placeholder,
+.dark-mode .search-box input::placeholder {
+    color: #aaa;
 }
 .featured {
     margin: 30px 20px;
@@ -471,3 +487,264 @@ html {
         width: 80%;
     }
 }
+.hero button {
+    background-color: white;
+    color: #7b2cbf;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.hero {
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background:
+        linear-gradient(rgba(60, 20, 100, 0.65), rgba(130, 50, 170, 0.55)),
+        linear-gradient(135deg, #24113f, #7b2cbf, #c77dff);
+
+    color: white;
+    padding: 40px 20px;
+}
+
+.hero-content {
+    max-width: 750px;
+}
+
+.hero-small {
+    font-size: 16px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero h2 {
+    font-size: 52px;
+    line-height: 1.15;
+    margin: 10px 0 20px;
+    color: white;
+}
+
+.hero-text {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+
+.hero button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+/* 🎬 Beautiful Drama Cards */
+
+.drama-card {
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.drama-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(123, 44, 191, 0.25);
+}
+
+.drama-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: 0.4s;
+}
+
+.drama-card:hover img {
+    transform: scale(1.05);
+}
+
+.drama-card h3 {
+    margin-top: 20px;
+}
+
+.drama-card button {
+    margin-top: 10px;
+}
+/* 🎵 K-Pop Aesthetic Cards */
+
+.kpop {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.kpop > h2 {
+    font-size: 38px;
+    margin-bottom: 40px;
+}
+
+.kpop-card {
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.kpop-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, #7b2cbf, #c77dff);
+}
+
+.kpop-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(123, 44, 191, 0.25);
+}
+
+.artist-icon {
+    font-size: 55px;
+    margin: 10px 0 15px;
+}
+
+.kpop-card h3 {
+    margin: 10px 0;
+}
+
+.kpop-card button {
+    margin-top: 12px;
+}
+/* 💜 BTS Premium Banner */
+
+.bts-banner {
+    max-width: 800px;
+    margin: 0 auto 45px;
+    padding: 25px 30px;
+    border-radius: 22px;
+
+    background: linear-gradient(135deg, #7b2cbf, #c77dff);
+
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    box-shadow: 0 10px 25px rgba(123, 44, 191, 0.25);
+}
+
+.bts-banner > span {
+    font-size: 50px;
+}
+
+.bts-banner h3 {
+    color: white;
+    font-size: 24px;
+    margin: 0 0 8px;
+}
+
+.bts-banner p {
+    margin: 0;
+    font-size: 16px;
+}
+
+/* ✨ Member card animation */
+
+.member-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.member-card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 12px 25px rgba(123, 44, 191, 0.25);
+}
+/* ✨ Smooth Website Animations */
+
+html {
+    scroll-behavior: smooth;
+}
+
+.drama-card,
+.kpop-card,
+.member-card,
+.song-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.drama-card:hover,
+.kpop-card:hover,
+.member-card:hover,
+.song-card:hover {
+    transform: translateY(-8px);
+}
+
+button {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
+@media (max-width: 600px) {
+
+    /* Navigation */
+    nav a {
+        display: inline-block;
+        margin: 6px;
+        font-size: 14px;
+    }
+
+    /* Hero */
+    .hero {
+        min-height: 430px;
+        padding: 30px 15px;
+    }
+
+    .hero h2 {
+        font-size: 32px;
+    }
+
+    .hero-text {
+        font-size: 16px;
+    }
+
+    /* Search */
+    .search-box {
+        padding: 25px 10px;
+    }
+
+    .search-box input {
+        width: 75%;
+        max-width: none;
+    }
+
+    /* Cards */
+    .drama-card,
+    .kpop-card,
+    .song-card {
+        width: 85%;
+        max-width: 320px;
+    }
+
+    .member-card {
+        width: 75%;
+        max-width: 280px;
+    }
+
+    /* BTS banner */
+    .bts-banner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Popup */
+    .popup-content {
+        width: 80%;
+        max-height: 80vh;
+        overflow-y: auto;
+    }
+}
+
