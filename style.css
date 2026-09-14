@@ -748,4 +748,222 @@ button:hover {
         overflow-y: auto;
     }
 }
+header h1 {
+    letter-spacing: 3px;
+    text-shadow: 0 3px 12px rgba(255, 255, 255, 0.35);
+    transition: 0.3s;
+}
+
+header h1:hover {
+    transform: scale(1.05);
+}
+/* 🎬 K-Drama Section Heading */
+
+.dramas {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.dramas > h2 {
+    font-size: 38px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.dramas > h2::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 4px;
+    background-color: #c77dff;
+    border-radius: 10px;
+    margin: 12px auto 0;
+}
+/* 🍉 Featured Drama Upgrade */
+
+.featured {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.featured::before {
+    content: "🍉";
+    position: absolute;
+    font-size: 120px;
+    right: 30px;
+    top: 20px;
+    opacity: 0.12;
+    transform: rotate(15deg);
+}
+
+.featured:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(123, 44, 191, 0.25);
+}
+
+.featured-content {
+    position: relative;
+    z-index: 1;
+}
+/* 💜 BTS Member Card Upgrade */
+
+.member-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.member-card::before {
+    content: "💜";
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    font-size: 18px;
+    opacity: 0.5;
+}
+
+.member-card h3 {
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.member-card:hover h3 {
+    transform: scale(1.08);
+}
+
+.member-card p {
+    line-height: 1.5;
+}
+/* 🎵 BTS Songs Upgrade */
+
+.song-card {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.song-card::before {
+    content: "🎵";
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    font-size: 20px;
+    opacity: 0.4;
+}
+
+.song-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(123, 44, 191, 0.25);
+}
+
+.song-card h4 {
+    margin-top: 12px;
+    transition: 0.3s;
+}
+
+.song-card:hover h4 {
+    transform: scale(1.05);
+}
+
+.song-card button {
+    margin-top: 10px;
+}
+/* 🌸 Fan Zone Upgrade */
+
+.fan-zone {
+    padding: 80px 20px;
+}
+
+.fan-zone h2 {
+    margin-bottom: 15px;
+}
+
+.fan-zone input {
+    transition: 0.3s;
+}
+
+.fan-zone input:focus {
+    border-color: #886ca1;
+    box-shadow: 0 0 12px rgba(123, 44, 191, 0.2);
+}
+
+.fan-zone button {
+    transition: 0.3s;
+}
+
+.fan-zone button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(123, 44, 191, 0.25);
+}
+
+#fanMessage {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #ece9f0;
+}
+/* 📩 Contact Section Upgrade */
+
+.contact {
+    padding: 80px 20px;
+}
+
+.contact h2 {
+    margin-bottom: 10px;
+    color:whitesmoke;
+}
+
+.contact input,
+.contact textarea {
+    transition: 0.3s;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+    border-color: #7b2cbf;
+    box-shadow: 0 0 12px rgba(123, 44, 191, 0.2);
+}
+
+.contact button {
+    transition: 0.3s;
+}
+
+.contact button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(123, 44, 191, 0.25);
+}
+
+#contactResult {
+    margin-top: 20px;
+    font-size: 17px;
+}
+/* 🌸 About Section Upgrade */
+
+.about {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.about h2 {
+    margin-bottom: 25px;
+}
+
+.about p {
+    max-width: 700px;
+    margin: 15px auto;
+    line-height: 1.7;
+}
+
+.about p:first-of-type {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.about::after {
+    content: "🌸  💜  🎬  🎵  🌸";
+    display: block;
+    margin-top: 30px;
+    font-size: 24px;
+    letter-spacing: 8px;
+}
+
 
